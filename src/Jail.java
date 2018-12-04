@@ -5,5 +5,6 @@ public class Jail extends Square{
         super(nameOfSquare, 0, 0);
     }
 
-
+	public  void doAction(Player player){
+	 }
 }
