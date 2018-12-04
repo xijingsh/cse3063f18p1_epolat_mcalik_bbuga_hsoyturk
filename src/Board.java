@@ -23,23 +23,29 @@ public class Board {
         		}
         		catch(InterruptedException ex) { 
         		}
-        		int currentLocation = movePlayerOnBoard(players[i]);
-        		System.out.println(players[i].getName() + " moves to the " + currentLocation + ".square " + squares[currentLocation].getName());
-        		System.out.println("Money: " + players[i].getMoney().getMoney()+"\n");
-        		previousMoney = players[i].getMoney().getMoney();
-        		if(currentLocation == 12) {
-        			if (squares[28].getOwner() != null ){
-            			squares[currentLocation].bothOfUtilityBelongsToSameOwner((squares[28].getOwner().getName()));
-        			}
+        		if(players[i].IsPlayerInJail()){
+            		squares[10].doAction(players[i]);
         		}
-        		else if(currentLocation == 28) {
-        			if (squares[28].getOwner() != null ){
-            			squares[currentLocation].bothOfUtilityBelongsToSameOwner((squares[28].getOwner().getName()));
-        			}
-        		}
-        		squares[currentLocation].doAction(players[i]);
-        		if(previousMoney != players[i].getMoney().getMoney()){
-        			System.out.println("The new money amount: " + players[i].getMoney().getMoney() + "\n");
+        		else {
+        			System.out.println("••••••••••••••••••••••••••••••••••••");
+        			int currentLocation = movePlayerOnBoard(players[i]);
+            		System.out.println(players[i].getName() + " moves to the " + currentLocation + ".square " + squares[currentLocation].getName());
+            		System.out.println("Money: " + players[i].getMoney().getMoney()+"\n");
+            		previousMoney = players[i].getMoney().getMoney();
+            		if(currentLocation == 12) {
+            			if (squares[28].getOwner() != null ){
+                			squares[currentLocation].bothOfUtilityBelongsToSameOwner((squares[28].getOwner().getName()));
+            			}
+            		}
+            		else if(currentLocation == 28) {
+            			if (squares[28].getOwner() != null ){
+                			squares[currentLocation].bothOfUtilityBelongsToSameOwner((squares[28].getOwner().getName()));
+            			}
+            		}
+            		squares[currentLocation].doAction(players[i]);
+            		if(previousMoney != players[i].getMoney().getMoney()){
+            			System.out.println("The new money amount: " + players[i].getMoney().getMoney() + "\n");
+            		}
         		}
         		for (int j = 0; j < playerNumber; j++) {
         			playerNumberInTheGame = playerNumber;
@@ -82,7 +88,7 @@ public class Board {
 				squares[i] = new Chance("A Chance Card!");
 			}
 			else if (i == 10) {
-				squares[i] = new Jail("In Jail, Just Visiting!");
+				squares[i] = new Jail("Jail!");
 			}
 			else if (i == 12 || i == 28) {
 				String utilityName = (String)firstOne.nameOfAvenue(i);

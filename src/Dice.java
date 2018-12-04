@@ -5,15 +5,13 @@ public class Dice  {
 	public int getDiceValue() {
         Random randomDice = new Random();
         return randomDice.nextInt(6) + 1;
-     
     }
+	
 	public int getDiceShape(int die_1, int die_2) {
 		
 		System.out.println("        _____           _____");
 		System.out.println("       /     /|        /     /|");
 		System.out.println("      /_____/ |       /_____/ |");
-		
-		
 		
 		for (int i=0; i<3; i++) {
 			if (die_1 == 1) {
@@ -38,7 +36,6 @@ public class Dice  {
 					System.out.print("      |_____|/        ");
 				}
 			}
-			
 			else if (die_1 == 3) {
 				if (i == 0) {
 					System.out.print("      |  •  | |       ");
@@ -50,7 +47,6 @@ public class Dice  {
 					System.out.print("      |_____|/        ");
 				}
 			}
-			
 			else if (die_1 == 4) {
 				if (i == 0) {
 					System.out.print("      | • • | |       ");
@@ -120,7 +116,6 @@ public class Dice  {
 					System.out.print("|_____|/\n");
 				}
 			}
-			
 			else if (die_2 == 4) {
 				if (i == 0) {
 					System.out.print("| • • | |\n");
@@ -155,8 +150,6 @@ public class Dice  {
 				}
 			}
 		}
-		
-
 		return 0;			
 		}
 }
