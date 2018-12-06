@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Avenue extends Square {
 	
 	private Scanner scan = new Scanner(System.in);
