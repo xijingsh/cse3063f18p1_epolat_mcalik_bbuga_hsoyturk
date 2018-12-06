@@ -28,6 +28,9 @@ public class Avenue extends Square {
 		        	System.out.println(player.getName()+ " have not bought "+this.getName()+"!");
 		        }
 			}
+			else if (this.getOwner() == player){
+				System.out.println("It's your avenue, welcome!");
+			}
 			else {
 				System.out.println("There is an owner, you have to pay rent! The rent is: "+rent);
 				if(player.getMoney().getMoney() >= rent) {
