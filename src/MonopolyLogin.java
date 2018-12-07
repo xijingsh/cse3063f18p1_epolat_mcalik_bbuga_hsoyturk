@@ -82,6 +82,7 @@ public class MonopolyLogin {
             } while (name[i].equalsIgnoreCase(""));
         }
         return name;
+
     }
 
     private static int getStartingMoney() {
