@@ -1,11 +1,11 @@
-public class IncomeTax extends Square{
+public class IncomeTax extends Square {
 
-	public IncomeTax(String nameOfSquare) {
+    public IncomeTax(String nameOfSquare) {
         super(nameOfSquare, 0, 0);
     }
 
-	public  void doAction(Player player, Board board){
-		System.out.println("You paid 200 TL for Income Tax!");
-		player.getMoney().reduceMoney(200);
-	}
+    public void doAction(Player player, Board board) {
+        System.out.println("You paid 200 TL for Income Tax!");
+        player.getMoney().reduceMoney(200);
+    }
 }
