@@ -2,9 +2,9 @@
 Object Oriented Software Design
 Project 1
 
-In the '1st Iteration' folder, we have diagrams and project files that we prepared in the first step.
+In the '1st Iteration' folder, we have first diagrams, first report and first project files that we prepared in the first step.
 Our project files in the first step due to conflict problem have .zip extension.
 
-There are diagrams in the second step of '2nd Iteration'.
+There are final version diagrams and final version report in the second step of '2nd Iteration'.
 
 The final version of our project has source codes and other files in the main folder.
