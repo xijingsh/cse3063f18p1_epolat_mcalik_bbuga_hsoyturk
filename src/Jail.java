@@ -10,7 +10,7 @@ public class Jail extends Square {
     public void doAction(Player player, Board board) {
 
         if (player.IsPlayerInJail() == true) {
-            System.out.println("\n••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••");
+            System.out.println("\n••••••••••••••••••••••••••••••••••••••••••••••••••• ");
             System.out.println(player.getName() + " is still in the jail!");
             System.out.println("Roll the dice, if the dice become double, you can get away!");
             try {
