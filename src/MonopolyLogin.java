@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
 public class MonopolyLogin {
-	
-	private Board board;
-	private static Scanner scan = new Scanner(System.in);
-	
-	public MonopolyLogin(int playerNumber, String[] playerName, int startingMoney) {
-		System.out.println(" ______________________");
-		System.out.println("|                      |");
+
+    private Board board;
+    private static Scanner scan = new Scanner(System.in);
+
+    public MonopolyLogin(int playerNumber, String[] playerName, int startingMoney) {
+        System.out.println(" ______________________");
+        System.out.println("|                      |");
         System.out.println("|     GAME STARTS!     |");
         System.out.println("|______________________|\n");
         board = new Board(playerNumber, playerName, startingMoney);
     }
 
-	public static void main(String[] args) {
-		System.out.println(" ______________________");
-		System.out.println("|                      |");
+    public static void main(String[] args) {
+        System.out.println(" ______________________");
+        System.out.println("|                      |");
         System.out.println("| Welcome to Monopoly! |");
         System.out.println("|______________________|\n");
         System.out.println("How many players will play the Monopoly?");
@@ -24,16 +24,16 @@ public class MonopolyLogin {
         System.out.println("\nGive the player names, please:");
         String[] playerName = getPlayerName(playerNumber);
         int startingMoney = getStartingMoney();
-        MonopolyLogin monopoly = new MonopolyLogin(playerNumber, playerName, startingMoney);   
-	}
-	
-	private static int getWantedPlayerNumber() {
-		
-		String input;
+        MonopolyLogin monopoly = new MonopolyLogin(playerNumber, playerName, startingMoney);
+    }
+
+    private static int getWantedPlayerNumber() {
+
+        String input;
         int number;
         do {
             input = scan.next();
-            while (!isInteger(input,10)) {
+            while (!isInteger(input, 10)) {
                 System.err.println("You must enter only integer numbers!");
                 System.out.print("How many people are playing?\n");
                 System.out.print("Between 2 and 8: ");
@@ -47,23 +47,20 @@ public class MonopolyLogin {
             }
         } while (number > 8 || number < 2);
         return number;
-	}
-	
-	private static String[] getPlayerName(int playerNumber) {
-		String[] name = new String[playerNumber];
-		for (int i = 0; i < playerNumber; i++) {
+    }
+
+    private static String[] getPlayerName(int playerNumber) {
+        String[] name = new String[playerNumber];
+        for (int i = 0; i < playerNumber; i++) {
             do {
-            	if(i==0) {
-                	System.out.print("1st ");
-            	}
-                else if(i == 1) {
+                if (i == 0) {
+                    System.out.print("1st ");
+                } else if (i == 1) {
                     System.out.print("2nd ");
-                }
-                else if (i == 2){
+                } else if (i == 2) {
                     System.out.print("3rd ");
-                }
-                else {
-                    System.out.print(""+(i+1) + "th ");
+                } else {
+                    System.out.print("" + (i + 1) + "th ");
                 }
                 System.out.print("Player's name: ");
                 name[i] = scan.next();
@@ -73,16 +70,16 @@ public class MonopolyLogin {
             } while (name[i].equalsIgnoreCase(""));
         }
         return name;
-	}
-	
-	private static int getStartingMoney() {
-		String input;
+    }
+
+    private static int getStartingMoney() {
+        String input;
         int number;
         do {
-        	System.out.print("\nHow much money should players start with? ");
+            System.out.print("\nHow much money should players start with? ");
             System.out.print("(At least 500 TL): ");
             input = scan.next();
-            while (!isInteger(input,10)) {
+            while (!isInteger(input, 10)) {
                 System.out.println("You must enter only integer numbers!\n");
                 System.out.println("How much money should players start with? ");
                 input = scan.next();
@@ -93,21 +90,20 @@ public class MonopolyLogin {
             }
         } while (number < 500);
         return number;
-	}
-	
-	public static boolean isInteger(String s, int radix) {
-		if(s.isEmpty()){
-			return false;
-		}
-		for(int i = 0; i < s.length(); i++) {
-			if(i == 0 && s.charAt(i) == '-') {
-				if(s.length() == 1){
-					return false;
-				}
-            else continue;
-        }
-        if(Character.digit(s.charAt(i),radix) < 0) return false;
     }
-    return true;
-	}
+
+    public static boolean isInteger(String s, int radix) {
+        if (s.isEmpty()) {
+            return false;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if (i == 0 && s.charAt(i) == '-') {
+                if (s.length() == 1) {
+                    return false;
+                } else continue;
+            }
+            if (Character.digit(s.charAt(i), radix) < 0) return false;
+        }
+        return true;
+    }
 }
