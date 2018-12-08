@@ -10,12 +10,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MonopolyLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+            <state relative-caret-position="119">
+              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -23,7 +23,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -61,24 +61,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="2nd iteration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2nd iteration" type="462c0819:PsiDirectoryNode" />
+              <item name="cse3063f18p1_epolat_mcalik_bbuga_hsoyturk-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cse3063f18p1_epolat_mcalik_bbuga_hsoyturk-" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2nd iteration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cse3063f18p1_epolat_mcalik_bbuga_hsoyturk-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cse3063f18p1_epolat_mcalik_bbuga_hsoyturk-" type="462c0819:PsiDirectoryNode" />
+              <item name="1st iteration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cse3063f18p1_epolat_mcalik_bbuga_hsoyturk-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cse3063f18p1_epolat_mcalik_bbuga_hsoyturk-" type="462c0819:PsiDirectoryNode" />
               <item name="2nd iteration" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,6 +148,7 @@
       <workItem from="1544179772717" duration="9726000" />
       <workItem from="1544269202162" duration="6822000" />
       <workItem from="1544300745282" duration="122000" />
+      <workItem from="1544300930550" duration="223000" />
     </task>
     <task id="LOCAL-00001" summary="5.12.2018 esra">
       <created>1544016134372</created>
@@ -319,11 +325,25 @@
       <option name="project" value="LOCAL" />
       <updated>1544300831917</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;CSE3063F18P1_DCD_epolat_mcalik_bbuga_hsoyturk_iteration2.pdf">
+      <created>1544301000307</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1544301000307</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;CSE3063F18P1_DCD_epolat_mcalik_bbuga_hsoyturk_iteration2.pdf">
+      <created>1544301114294</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1544301114294</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19985000" />
+    <option name="totallyTimeSpent" value="20208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -333,7 +353,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22281879" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2261745" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.3292683" />
@@ -529,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MonopolyLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
         </state>
       </provider>
     </entry>
