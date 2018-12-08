@@ -63,10 +63,10 @@ public class MonopolyLogin {
                 } else {
                     System.out.print(" " + (i + 1) + "th ");
                 }
-                System.out.print(  "Player's name: " );
+                System.out.print("Player's name: ");
                 name[i] = scan.next();
                 if (name[i].equalsIgnoreCase("")) {
-                    System.err.println( "You did not enter any name! Please give a name!\n" );
+                    System.err.println("You did not enter any name! Please give a name!\n");
                 }
 
             } while (name[i].equalsIgnoreCase(""));
@@ -80,8 +80,8 @@ public class MonopolyLogin {
         int number;
         input = scan.next();
         while (!isInteger(input, 10)) {
-            System.out.println( "You must enter only integer numbers!\n" );
-            System.out.println( "How much money should players start with? " );
+            System.out.println("You must enter only integer numbers!\n");
+            System.out.println("How much money should players start with? ");
             input = scan.next();
         }
         number = Integer.parseInt(input);
